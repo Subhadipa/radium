@@ -1,0 +1,76 @@
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021
+$ mkdir assignment
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021
+$ cd assignment
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment
+$ mkdir source
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment
+$ mkdir destination
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment
+$ cd source
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment/source
+$ touch test.txt
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment/source
+$ cat>test.txt
+Hello,I'm Subhadipa Banerjee.
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment/source
+$ cp source/test.txt destination
+cp: cannot stat 'source/test.txt': No such file or directory
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment/source
+$ cd ..
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment
+$ cp source/test.txt destination
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment
+Hello,I'm Subhadipa Banerjee.I started my journey in functionup in 18th of October,2021.functionup is a good platform to learn coding.    
+$ cd destination
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment/destination
+$ rm test.txt
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment/destination
+$ cd ..
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment
+$ mv source/test.txt destination
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment
+$ cd destination
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment/destination
+$ ls
+test.txt
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment/destination
+$ vim test.txt
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment/destination
+$ cat test.txt
+Hello,I'm Subhadipa Banerjee.I started my journey in functionup in 18th of October,2021.functionup is a good platform to learn coding.
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment/destination
+$ cd ..
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment
+$ ls
+destination/  source/
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment
+$ cd destination
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment/destination
+$ ls
+test.txt
+
+Subhadipa@Subhadipa MINGW64 ~/Desktop/FunctionUp_Coding/1.Live_Coding/12_02.11.2021/assignment/destination
+$ grep -i "functionup" test.txt
+Hello,I'm Subhadipa Banerjee.I started my journey in functionup in 18th of October,2021.functionup is a good platform to learn coding.
