@@ -2,27 +2,38 @@ const mongoose=require('mongoose')
 
 const userSchema=new mongoose.Schema(
     {
-    name:String,
-       
-    balance:
+    name:
+        {
+           type:String,
+           required:true,
+           unique:true
+        },
+    mobile:
         {
             type:Number,
             require:true,
-            default:100
+           
         },
-    address:String,
-    age:Number,
-    gender:{type: String, enum: ['male', 'female', 'other']},
-
-    freeAppUser: 
+    email:
+        {
+            type:String,
+             required:true
+           
+        },
+    password:
+        {
+            type:String,
+            required:true
+         },
+    isDeleted:
          {
              type:Boolean,
              default:false
          }
     },
 
-{timestamps: true} 
-
-)
-
-module.exports = mongoose.model( 'User_22.11.2021',userSchema )
+        {timestamps: true} 
+        
+    )
+        
+module.exports = mongoose.model( 'User_23.11.2021',userSchema )
